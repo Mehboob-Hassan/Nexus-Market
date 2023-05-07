@@ -1,0 +1,146 @@
+@import ../../styles/helpers
+.upperSection
+    // border: 2px solid red
+    display: flex
+    justify-content: space-between
+    margin: 1rem
+    +m
+        flex-direction: column
+        align-items: center
+    .left
+        // border: 2px solid green
+        width: 50%
+        padding: 1rem
+        +m
+            width: 95%
+        img
+            min-height: 400px
+            height: auto
+            width: 100%
+            object-fit: cover
+    .right
+        // border: 2px solid $yellow
+        width: 50%
+        padding: 1rem
+        +m
+            width: 95%
+        .name
+            p
+                // color: $light-blue
+                &:last-child
+                    color: $grey
+                    margin-top: 0.5rem
+                    font-size: 0.8rem
+                    span
+                        // color: $light-blue
+        .price
+            margin-top: 1.5rem
+            p
+                // color: $light-blue
+                &:last-child
+                    // margin-top: 0.5rem
+            h3
+                color: $white
+            .btnContainer
+                margin-top: 1rem
+                .btn
+                    // color: $black
+                    border: none
+                    // background-color: $light-blue
+                    padding: 0.6rem 0.9rem
+                    border-radius: 30px
+                    cursor: pointer
+                    transition: all 0.2s
+                    &:hover
+                        background-color: #69686d
+                    // &:last-child
+                    //     background-color: transparent
+                        // color: $light-blue
+    .reportCard
+        // border: 2px solid red
+        padding: 1rem
+        // background-color: $black
+        border-radius: 20px
+        margin-top: 1.5rem
+        .top
+            display: flex
+            justify-content: space-around
+            .average
+                p
+                    // color: $white
+                    &:last-child
+                        color: $grey
+                        font-size: 0.8rem
+                        // margin-top: 0.5rem
+                h3
+                    color: $white
+            .button
+                button
+                    // color: $black
+                    border: none
+                    // background-color: $light-blue
+                    padding: 0.4rem 0.6rem
+                    border-radius: 30px
+                    cursor: pointer
+                    transition: all 0.2s
+                    &:hover
+                        background-color: #69686d
+        .bottom
+            img
+                width: 100%
+                margin-top: 1rem
+.middleSection
+    margin: 2rem 1rem
+    .nav
+        // border: 2px solid red
+        display: flex
+        justify-content: space-around
+        .link
+            // color: $white
+            text-decoration: none
+            +s
+                font-size: 0.8rem
+        .active
+            // color: $light-blue
+    .navContent
+        // border: 2px solid red
+        width: 100%
+        overflow: hidden
+        margin: 1rem 0rem
+        p
+            // border: 2px solid $yellow
+            // color: white
+            padding: 1rem 2rem
+            font-size: 0.9rem
+            // margin: 1rem 0rem
+            width: 100%
+            span
+                // color: $light-blue
+            .link
+                // color: $white
+                // font-size: 0.8rem
+    // .navContent
+.bottomSection
+    // border: 2px solid red
+    // width: 100%
+    // position: absolute
+    margin: 1rem
+    // z-index: 1
+    h3
+        // color: $white
+    .cardContainer
+        // border: 2px solid green
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        margin: 1rem 0rem
+        +s
+            flex-direction: column
+            align-items: center
+        .cardd
+            // border: 2px solid $yellow
+            width: max-content
+            &:last-child
+                // border: 2px solid green
+                +m
+                    display: none

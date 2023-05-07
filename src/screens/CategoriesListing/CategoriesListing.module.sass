@@ -1,0 +1,54 @@
+@import ../../styles/helpers
+
+.categoriesListingContainerWrapper
+    //border: 1px solid red
+    width: 100%
+    min-height: 100vh
+    .categoriesListingContainer
+        //border: 1px solid blue
+        width: 95%
+        height: 100%
+        margin: 50px auto 30px auto
+        .categoriesBannerAndInfoContainer,.nftCategoriesWiseContainerWrapper
+            //border: 1px solid green
+            width: 100%
+            height: 100%
+            color: white
+            .categoriesBannerContainer
+                width: 100%
+                height:200px
+                border-radius: 18px
+                background-image: url("../../../public/ozean_Images/Images/profileBg.png")
+                background-repeat: no-repeat 
+                background-position: center
+                background-size: cover
+            .categoriesInfoContainer
+                .headingContainer
+                    p
+                        text-align: center
+                        font-size: 21px
+                        font-weight: 500
+                        margin: 2rem 0 0 0
+                .descriptionContainer
+                    p
+                        width: 70%
+                        font-size: 14px
+                        font-weight: 500
+                        margin: 0.5rem auto 0 auto
+                        line-height: 23px
+                        text-align: center
+        .nftCategoriesWiseContainerWrapper
+            .headingContainer
+                p
+                    text-align: center
+                    font-size: 18px
+                    font-weight: 500
+                    // color: $light-blue
+                    margin: 3rem 0 0 0
+            .nftCategoriesWiseContainer
+                margin: 1rem 0 0 0
+                //border: 1px solid green      
+                width: 100%
+                display: flex
+                justify-content: space-around
+                flex-wrap: wrap

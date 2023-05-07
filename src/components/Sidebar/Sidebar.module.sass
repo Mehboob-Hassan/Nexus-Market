@@ -1,0 +1,52 @@
+@import ../../styles/helpers
+.bg
+    width: 312px
+    height: 100% !important
+    // background-color: black
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0.5rem 0rem
+    overflow-y: scroll
+    scroll-behavior: smooth
+    &::-webkit-scrollbar
+        width: 6px
+    // &::-webkit-scrollbar-track::before
+    //     // box-shadow: inset 0 0 5px grey
+    //     background: black 
+    // &::-webkit-scrollbar-track::after
+        
+    //     // box-shadow: inset 0 0 5px grey
+    //     background: blue 
+    &::-webkit-scrollbar-thumb
+        border-radius: 20px
+        box-shadow: inset 0 0 5px grey
+        background: #010613
+        height: 5px
+        width: 5px 
+    &::-webkit-scrollbar-thumb:hover
+        background: cornsilk
+        box-shadow: inset 0 0 5px #010613
+
+    // height: 1509px
+    // border: 2px solid red
+    .logo
+        // border: 2px solid red
+        margin-bottom: 2rem
+    .close
+        // border: 2px solid red
+        display: none
+        +t
+            width: 90%
+            display: flex
+            justify-content: flex-end
+    .heading
+        span
+            font-size: 1rem
+    .market
+        // border: 2px solid $yellow
+    .filter
+        margin: 1rem 0rem
+        // border: 2px solid green
+    .offerCrd
+        // border: 2px solid red

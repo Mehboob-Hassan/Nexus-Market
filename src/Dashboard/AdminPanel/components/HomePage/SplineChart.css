@@ -1,0 +1,12 @@
+
+.apexcharts-tooltip {
+    background:#FBFBFC!important;
+    color: #1F2552;
+    border: 1px solid transparent !important;
+    padding: 8px;
+  }
+
+
+  .apexcharts-xaxistooltip-bottom {
+    display: none;
+  }

@@ -1,0 +1,77 @@
+#innerDiv{
+    background-color: black;
+    height: 60px;
+    border-radius: 8px 8px;
+    padding-left: 45px;
+    padding-top: 15px;
+}
+#innerDiv1{
+    margin-left: 20px;
+    background-color: black;
+    height: auto;
+    border-radius: 8px 8px;
+    width: 220px;
+    padding-bottom: 30px;
+    
+}
+#imageSize{
+    width: 18px;
+    margin-right: 10px;
+}
+#threeBars{
+    visibility: hidden;
+}
+@media screen and (max-width: 980px) {
+    #threeBars{
+        visibility: visible;
+    }
+  }
+  #searchBorder{
+      
+      border-radius: 20px ;
+  }
+  #ImgBorder{
+      border-radius: 20px 20px;
+  }
+  #cardBorder{
+      border-radius: 20px 20px;
+      width: 240px;
+      background-color: black;
+  }
+  #cardBorder1{
+    border-radius: 20px 20px;
+    width: 220px;
+    background-color: black;
+}
+#cardBorderSide{
+    border-radius: 20px 20px;
+}
+#cardBorderSideCreator{
+    border-radius: 20px 20px;
+    background-color: rgb(36, 36, 36);
+}
+#cardBorderSide1{
+    border-radius: 20px 20px;
+    height: 180px;
+}
+  #paddingCol{
+      margin-right: 60px;
+  }
+ 
+    #paddingCol{
+        margin-right: auto;
+    }
+  
+  #btnBorder{
+      border-radius: 25px 25px;
+  }
+  #sidebarDiv{
+      background-color: darkgray;
+      margin-top: 40px;
+      border-radius: 20px 20px;
+      height: 150px;
+      
+  }
+  .sidebarText{
+      font-size: 10px;
+  }

@@ -1,0 +1,93 @@
+@import ../../styles/helpers
+.bg
+    display: flex
+    justify-content: flex-end
+    // background-color: $bg
+    position: relative
+    // height: 1500px
+    // border: 2px solid red
+    z-index: 0
+    width: 100%
+    max-width: 1920px
+    margin: 0 auto
+    height: 100%
+    .sidebar
+        height: 100%
+        // border: 2px solid red
+        position: absolute
+        top: 0
+        left: 0
+        // height: max-content
+        // height: max-content
+        transition: all 0.5s
+        // z-index: 10
+        +t
+            left: -100%
+            display: none
+            transition: all 0.5s
+        .hide
+            // border: 2px solid red
+            position: absolute
+            top: 0
+            left: -100%
+            height: 100%
+            // transition: all 20s ease
+    .rightDiv
+        // border: 2px solid red
+        position: relative
+        top: 0
+        right: 0
+        width: calc( 100% - 312px )
+        height: 100%
+        // width: 100%
+        display: flex
+        flex-direction: column
+        z-index: -1
+        // background-color: $bg
+        // border: 2px solid red
+        // overflow-x: hidden
+        +t
+            width: 100%
+            // padding-right: 0
+        .hero
+            display: flex
+            // position: relative
+            // border: 2px solid green
+            justify-content: space-between
+            margin: 1rem 0 2rem 0
+            .heroLeft
+                // position: absolute
+                // border: 2px solid red
+                width: 100%
+                height: 100%
+                // height: 100vh
+                // height: 100%
+                // background-color: $bg
+            .heroSide
+                height: 100%
+                padding-right: 1.5rem
+                // background-color: $bg
+                // position: absolute
+                // right: 0
+                // top: 0
+                // border: 2px solid red
+                transition: all 0.5s
+                // overflow-x: hidden
+                +t
+                    padding-right: 0px
+                    display: none
+                +m
+                    padding-right: 0px
+                    // right: -100%
+.footer
+    // border: 2px solid red
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $black
+    padding: 1rem 0rem
+    // margin-top: 0.7rem
+    // +t
+    //     margin-top: 0rem
+    p
+        color: $white

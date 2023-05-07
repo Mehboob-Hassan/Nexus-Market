@@ -1,0 +1,101 @@
+@import ../../styles/helpers
+
+.maintenanceContentcontainer
+    background:#030A1D
+    background-image: url("../../../public/errorPageBgImg.png")
+    background-repeat: no-repeat 
+    background-size: 20%
+    background-position: left bottom
+    width: 100vw
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    .maintenanceContentWrapper
+        .imageWrapper
+            margin: 0 0 5px 0
+            padding: 5px 10px
+            text-align: center
+        .detailsWrapper
+            padding: 5px 10px
+            text-align: center
+            .headingText
+                font-size: 28px
+                font-weight: 500
+                margin: 0px 0px 8px 0px
+                color: white
+                +m
+                    font-size: 22px
+                +s
+                    font-size: 18px
+            
+            .discriptionText
+                font-size: 14px
+                font-weight: 400
+                color: #827D9D
+                +m
+                    font-size: 13px
+                +s
+                    font-size: 11px
+
+        .timerWrapper
+            padding: 5px 10px
+            text-align: center
+            .timerText
+                color: $light-blue
+                font-size: 49px
+                font-weight: 400
+                letter-spacing: 3px
+                +m
+                    font-size: 40px
+                +s
+                    font-size: 32px
+
+
+        .inputWrapper
+            margin: 0 0 0px 0
+            padding: 5px 10px
+            text-align: center
+            position: relative
+            input
+                width: 100%
+                background: transparent
+                color: white
+                font-size: 16px
+                font-weight: 400
+                border: 0.5px solid green
+                border-radius: 20px
+                outline: none
+                padding: 10px 10px
+                &::placeholder
+                    color: white
+                    font-size: 16px
+                    font-weight: 400
+
+            button
+                font-family: 'Roboto', sans-serif
+                font-size: 14px
+                font-weight: 400
+                margin: 8px 0
+                color:  $deluge
+                border: none
+                outline: none
+                padding: 10px 20px
+                border-radius: 20px
+                background-color: $light-blue
+                text-transform: capitalize
+                font-size: 12px
+                padding: 8px 15px
+                cursor: pointer
+                position: absolute
+                top: 5px
+                right: 15px
+                +s
+                    top: 5px
+                    font-size: 11px
+                    padding: 6px 12px
+
+    +m
+        background-image: none
+    +s
+        background-image: none

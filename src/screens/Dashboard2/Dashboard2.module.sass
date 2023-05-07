@@ -1,0 +1,71 @@
+@import ../../styles/helpers
+.Bg
+    // background-color: $bg
+.upper
+    // border: 2px solid red
+    display: flex
+    justify-content: space-around
+    margin: 1rem
+    // background-color: $black
+    border-radius: 20px
+    +m
+        flex-direction: column
+    .left
+        // border: 2px solid green
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        +m
+            align-items: center
+        // width: max-content
+        h1
+            color: $white
+            font-size: 1.5rem
+            font-weight: bold
+            text-align: center
+        .btnContainer
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            p
+                color: $grey
+            button
+                // background-color: $light-blue
+                // color: $black
+                border: none
+                padding: 0.7rem 1rem
+                border-radius: 30px
+                cursor: pointer
+                margin-top: 0.5rem
+                transition: all 0.2s
+
+                &:hover
+                    background-color: #69686d
+    .right
+        width: max-content
+        width: 60%
+        // border: 2px solid $yellow
+        display: flex
+        justify-content: space-between
+        align-content: center
+        // flex-wrap: wrap
+        .card
+            &:first-child
+                +m
+                    display: none
+.lower
+    // border: 2px solid red
+    display: flex
+    flex-direction: column
+    // align-items: center
+    padding: 1rem
+    margin: 2rem 0rem
+    h1
+        color: $white
+        // border: 2px solid red
+        width: 100%
+    .cardContainer
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap

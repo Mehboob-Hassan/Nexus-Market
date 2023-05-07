@@ -1,0 +1,10 @@
+<svg id="Group_9" data-name="Group 9" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <rect id="Rectangle" width="40" height="40" rx="20" fill="#f5ac51"/>
+  <g id="facebook-logo_4_" data-name="facebook-logo (4)" transform="translate(11 11)">
+    <g id="instagram_2_" data-name="instagram (2)">
+      <path id="Shape" d="M5.625,18A5.626,5.626,0,0,1,0,12.375V5.625A5.626,5.626,0,0,1,5.625,0h6.75A5.626,5.626,0,0,1,18,5.625v6.75A5.626,5.626,0,0,1,12.375,18Z" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.5"/>
+      <path id="Shape-2" data-name="Shape" d="M0,4.5A4.5,4.5,0,1,1,4.5,9,4.5,4.5,0,0,1,0,4.5Z" transform="translate(4.5 4.5)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.5"/>
+      <circle id="Oval" cx="0.6" cy="0.6" r="0.6" transform="translate(13.238 3.563)" fill="#fff" stroke="#fff" stroke-miterlimit="10" stroke-width="0.5"/>
+    </g>
+  </g>
+</svg>

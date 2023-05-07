@@ -1,0 +1,150 @@
+import React from 'react'
+import styles from './EditProfileForm.module.sass'
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import { styled } from '@mui/material/styles';
+import { useFormik } from "formik";
+import { signUpSchema } from "../../schemas";
+import TextInputField from "../TextInputField"
+
+  const CustomTextField = styled(TextField)({
+    width: "100%",
+    '& label.MuiInputLabel-root': {
+        display: "none"
+    },
+    '& .MuiInput-underline:after': {
+        borderBottomColor: 'unset',
+    },
+    '& .MuiOutlinedInput-root': {
+        width: "100%",
+        '& input': {
+        width: "100%",
+        color: "#827D9D",
+        backgroundColor: "transparent",
+        fontSize: "14px",
+        fontWeight: "500",
+        border: "1px solid #00A2FD",
+        borderRadius: "56px",
+        padding: "12px 24px 12px 24px",
+      },
+    '& input::placeholder': {
+        color: "#827D9D",
+        opacity: "1"
+    },
+    '& fieldset': {
+        borderColor: 'unset',
+        display: "none"
+      },
+    '&': {
+        padding: 0,
+        margin: "5px 0",
+        position: "static"
+    },
+    '& textarea#mui-3': {
+        width: "100%",
+        height: "auto",
+        overflow: "auto",
+        padding: "12px 24px 12px 24px",
+        border: "1px solid #00A2FD",
+        borderRadius: "18px",
+        overflowWrap: "break-word",
+        backgroundColor: "transparent",
+        fontSize: "14px",
+        fontWeight: "500",
+        color: "#827D9D",
+      },
+    '& textarea#mui-3::placeholder': {
+        color: "#827D9D",
+        opacity: "1"
+      },
+    },
+  });
+  
+  const initialValues = {
+    username: "",
+    email: "",
+    bio: "",
+    dribbble: "",
+    behance: "",
+    instagram: "",
+  };
+
+const EditProfileForm = () => {
+    const { values, errors, touched, handleBlur, handleChange, handleSubmit } =
+    useFormik({
+      initialValues,
+      validationSchema: signUpSchema,
+      onSubmit: (values, action) => {
+        console.log("editProfileForm => ", values);
+        action.resetForm();
+      },
+    });
+
+  return (
+    <>
+        <Box className={styles.eightyPercentWrapper}>
+            <Box className={styles.ninetyFivePercentWrapper}>
+                <Box className={styles.editProfileFormContainer} sx={{padding: "10px"}}>
+                    <Box className={styles.headingWrapper}>
+                        <Typography variant="h5" fontWeight={500} gutterBottom>Profile Settings</Typography>
+                    </Box>
+                    <Box component="form" onSubmit={handleSubmit}  autoComplete="off">
+                        <TextInputField 
+                          label='Username'
+                          name='username' 
+                          value={values.username} 
+                          onChangeHandler={handleChange} 
+                          onBlurHandler={handleBlur} 
+                          placeholder='John _doe' 
+                          errors={errors.username} 
+                          touched={touched.username}
+                        />
+                        <Box className={styles.inputWrapper}>
+                            <label htmlFor="Username"><Typography>Username*</Typography></label>
+                            <CustomTextField  placeholder='John _doe' name='username' value={values.username} onChange={handleChange} onBlur={handleBlur} />
+                            {errors.username && touched.username ? (
+                            <Typography sx={{color:"#9c3c3c",mt:"5px",ml:"10px"}} variant="caption">{errors.username}</Typography>
+                            ) : null}
+                        </Box>
+                        <Box className={styles.inputWrapper}>
+                            <label htmlFor="Email"><Typography>Email</Typography></label>
+                            <CustomTextField  placeholder='John@gmail.com' name='email' value={values.email} onChange={handleChange} onBlur={handleBlur} />
+                            {errors.email && touched.email ? (
+                            <Typography sx={{color:"#9c3c3c",mt:"5px",ml:"10px"}} variant="caption">{errors.email}</Typography>
+                            ) : null}
+                        </Box>
+                        <Box className={styles.inputWrapper}>
+                            <label htmlFor="Bio"><Typography>Bio</Typography></label>
+                            <CustomTextField multiline rows={7} placeholder='Description' name='bio' value={values.bio} onChange={handleChange} onBlur={handleBlur} />
+                            {errors.bio && touched.bio ? (
+                            <Typography sx={{color:"#9c3c3c",mt:"5px",ml:"10px"}} variant="caption">{errors.bio}</Typography>
+                            ) : null}
+                        </Box>
+                        <Box className={styles.inputWrapper}>
+                            <label htmlFor="Links"><Typography>Links</Typography></label>
+                            <CustomTextField  placeholder='Dribbble' name='dribbble' value={values.dribbble} onChange={handleChange} onBlur={handleBlur} />
+                            {errors.dribbble && touched.dribbble ? (
+                            <Typography sx={{color:"#9c3c3c",mt:"5px",ml:"10px"}} variant="caption">{errors.dribbble}</Typography>
+                            ) : null}
+                            <CustomTextField  placeholder='Behance' name='behance'  value={values.behance} onChange={handleChange} onBlur={handleBlur} />
+                            {errors.behance && touched.behance ? (
+                            <Typography sx={{color:"#9c3c3c",mt:"5px",ml:"10px"}} variant="caption">{errors.behance}</Typography>
+                            ) : null}
+                            <CustomTextField  placeholder='Instagram' name='instagram'  value={values.instagram} onChange={handleChange} onBlur={handleBlur} />
+                            {errors.instagram && touched.instagram ? (
+                            <Typography sx={{color:"#9c3c3c",mt:"5px",ml:"10px"}} variant="caption">{errors.instagram}</Typography>
+                            ) : null}
+                        </Box>
+                        <Box className={styles.buttonWrapper}>
+                            <button type='submit'>Submit</button>
+                        </Box>
+                    </Box>
+                </Box>
+            </Box>
+        </Box>
+    </>
+  )
+}
+
+export default EditProfileForm

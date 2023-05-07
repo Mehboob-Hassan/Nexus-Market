@@ -1,0 +1,162 @@
+@import ../../styles/helpers
+.bg
+    // border: 2px solid red
+    display: flex
+    justify-content: space-between
+    align-items: center
+    // background-color: $black
+    padding: 1rem
+    width: 100% !important
+    +m
+        flex-direction: column
+        align-items: space-between
+    .heading
+        // color: $white
+        // border: 2px solid red
+        font-weight: bold
+        display: flex
+        justify-content: space-between
+        align-items: center
+        // margin-bottom: 0.5rem
+        .ham
+            font-size: 1.8rem
+            // color: $light-blue
+            +m
+                order: -1
+                font-size: 1.2rem
+        +m
+            width: 100%
+            font-size: 1.2rem
+        .ham
+            display: none
+            margin-left: 0.7rem
+            cursor: pointer
+            +t
+                display: block
+    .navAside
+        // border: 2px solid red
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 50%
+        +t
+            width: 55%
+        +m
+            flex-direction: column
+            width: 95%
+        .search
+            // border: 2px solid green
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 70%
+            // background-color: #10151c
+            border-radius: 30px
+            padding: 0rem 0.5rem
+            +t
+                // width: 90%
+            +m
+                width: 90%
+                margin: 1rem 0rem
+            input
+                width: 100%
+                padding: 1rem 0.5rem
+                border: none
+                border-radius: 30px
+                background-color: transparent
+                color: $white
+                &::placeholder
+                    color: $white
+                &:focus
+                    outline: none
+            img
+                width: 35px
+                height: 35px
+        .icons
+            display: flex
+            // border: 2px solid red
+            +m
+                width: 100%
+                justify-content: space-between
+            .icon
+                // border: 2px solid red
+                margin: 0rem 0.5rem
+                padding: 0.7rem
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 46px
+                height: 46px
+                border-radius: 50%
+                // background-color: #10151c
+                cursor: pointer
+                &:last-child
+                    display: none
+                    +t
+                        display: block
+            .dropdown
+                // border: 2px solid green
+                position: relative
+                .links
+                    // border: 2px solid red
+                    position: absolute
+                    z-index: 10
+                    // background-color: $bg
+                    left: -311%
+                    display: flex
+                    flex-direction: column
+                    width: max-content
+                    margin-top: 0.5rem
+                    padding: 1rem
+                    border-radius: 10px
+                    box-shadow: 6px 10px 32px -5px rgba(0,0,0,0.43)
+                    -webkit-box-shadow: 6px 10px 32px -5px rgba(0,0,0,0.43)
+                    -moz-box-shadow: 6px 10px 32px -5px rgba(0,0,0,0.43)
+                    border: 1px solid #006cf846
+                    transition: all 0.3s
+                    +m
+                        left: -130%
+                    .link
+                        // color: $light-blue
+                        text-decoration: none
+                        margin: 1rem 0.5rem
+                .hide
+                    transition: all 0.3s
+                    top: -100%
+                    display: none
+                .avatar
+                    width: 45px
+                    height: 45px
+                    cursor: pointer
+                    background-color: transparent
+                    &::selection
+                        background-color: transparent
+                    &::-moz-selection
+                        background-color: transparent
+            .dropdown1
+                // border: 2px solid green
+                position: relative
+                .links1
+                    // border: 2px solid red
+                    position: absolute
+                    z-index: 10
+                    // background-color: $bg
+                    left: -220%
+                    display: flex
+                    flex-direction: column
+                    width: max-content
+                    margin-top: 0.5rem
+                    padding: 1rem
+                    border-radius: 10px
+                    box-shadow: 6px 10px 32px -5px rgba(0,0,0,0.43)
+                    -webkit-box-shadow: 6px 10px 32px -5px rgba(0,0,0,0.43)
+                    -moz-box-shadow: 6px 10px 32px -5px rgba(0,0,0,0.43)
+                    border: 1px solid #006cf846
+                    transition: all 0.3s
+                    +m
+                        left: -130%
+                .hide1
+                    transition: all 0.3s
+                    top: -100%
+                    display: none
+               

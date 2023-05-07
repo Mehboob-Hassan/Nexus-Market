@@ -1,0 +1,13 @@
+li.slick-active > button::before {
+    color: red !important;
+    
+  }
+
+  .slick-dots li button:before {
+    background-color: #42BBFA;
+    height: 10px;
+    width: 30px;
+    text-indent: -9999px;
+    overflow:hidden; 
+    border-radius: 16px;
+    }
